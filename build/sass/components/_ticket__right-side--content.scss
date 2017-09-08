@@ -1,0 +1,45 @@
+.ticket__right-side--content {
+  @extend %flex, %justify-center, %align-center, %flex-1 !optional;
+  >div {
+    padding: 0 10px;
+    @media (min-width: 0px) and (max-width: 767px) {
+      padding: 0;
+    }
+  }
+}
+.ticket-btn {
+  font-size: 14px;
+  padding: 13px 30px;
+  border-radius: 38px;
+  background-color: #f9253f;
+  border-color: #f9253f;
+  transition: all 0.28s cubic-bezier(0.55, 0, 0.1, 1);
+
+  &:hover {
+    color: #fff;
+    background-color: #ef0723;
+    border-color: #ef0723;
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+    -webkit-box-shadow: 0 15px 25px rgba(0,0,0,0.12);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.15);
+  }
+}
+
+.ticket-price {
+  font-size: 32px;
+  margin: 0;
+  @media (min-width: 0px) and (max-width: 767px) {
+    font-size: 26px;
+  }
+  @media (min-width: 0px) and (max-width: 360px) {
+    font-size: 18px;
+  }
+}
+.ticket-price__fraction {
+  font-size: 18px;
+}
+.ticket-order {
+  font-size: 12px;
+  margin-bottom: 0;
+}
